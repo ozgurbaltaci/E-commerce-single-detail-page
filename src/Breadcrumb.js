@@ -8,16 +8,16 @@ const Breadcrumb = (props) => {
   return (
     <div>
       <div className={classes.breadCrumb}>
-        {/* Note that items in the breadcrumb will be passed via props as json object and it will be mapped instead of n numbered array */}
-        {/* Taken json object should contain navigation path and the name of span*/}
-        {/* Also a href part, need to use taken json array via props for different navigations */}
-
-        {[...Array(n)].map((e, i) => (
-          <a href="/" className={classes.breadcrumb_item}>
-            <span>Anasayfa</span>
-            {i !== n - 1 && <MdOutlineKeyboardArrowRight color="#f27a1a" />}
-          </a>
-        ))}
+        {props.breadCrumbData.map((e, i) => {
+          return (
+            <div>
+              <a href={e.navigation} className={classes.breadcrumb_item}>
+                <span>{e.name}</span>
+                {i !== n - 1 && <MdOutlineKeyboardArrowRight color="#f27a1a" />}
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
