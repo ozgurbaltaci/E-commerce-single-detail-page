@@ -1,5 +1,7 @@
 import React from "react";
-import Breadcrumb from "./Breadcrumb";
+import Breadcrumb from "../BreadCrumb/Breadcrumb";
+import ProductContent from "../ProductContent/ProductContent";
+import classes from "./DetailPage.module.css";
 
 const DetailPage = () => {
   const breadCrumbData = [
@@ -9,8 +11,9 @@ const DetailPage = () => {
     { name: "Ayakkabı", navigation: "/somePage" },
   ];
   return (
-    <div>
+    <div className={classes.detailPage}>
       <Breadcrumb breadCrumbData={breadCrumbData} />
+      <ProductContent />
     </div>
   );
 };
