@@ -1,10 +1,4 @@
 .detailPage {
-  margin-left: 6%;
-  transition: ease all 0.8s;
-}
-@media (max-width: 978px) {
-  .detailPage {
-    margin-left: 1%;
-    transition: ease all 0.8s;
-  }
+  width: 84%;
+  margin: 0 auto;
 }

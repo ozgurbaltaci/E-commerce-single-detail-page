@@ -1,0 +1,16 @@
+.infoCard {
+  height: 38px;
+  width: 78px;
+  font-size: 12px;
+  padding: 3px 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
